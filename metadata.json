@@ -1,0 +1,7 @@
+{
+  "name": "Apex Auto Care - Car Repair & Modification Garage",
+  "description": "Professional auto repair, mechanical servicing, custom car modification, and engine tuning with certified master mechanics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

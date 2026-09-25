@@ -1,0 +1,1078 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex Auto Care - Car Repair & Modification Garage</title>
+    <meta name="description" content="Professional auto repair, mechanical servicing, custom car modification, and engine tuning with certified master mechanics." />
+    <meta property="og:title" content="Apex Auto Care - Car Repair & Modification Garage" />
+    <meta property="og:description" content="Professional auto repair, mechanical servicing, custom car modification, and engine tuning with certified master mechanics." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <!-- Top Announcement & Contact Bar -->
+    <div class="topbar-apex d-none d-md-block">
+      <div class="container d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center gap-4">
+          <span><strong class="text-white">Workshop Hours:</strong> Mon – Sat: 8:00 AM – 8:00 PM</span>
+          <span><strong class="text-white">Location:</strong> 840 Performance Way, Velocity District</span>
+        </div>
+        <div class="d-flex align-items-center gap-3">
+          <span class="text-sky fw-bold">24/7 Roadside Assistance:</span>
+          <a href="tel:18005552739" class="text-white text-decoration-none fw-bold hover-red">+1 (800) 555-APEX</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sticky Main Navigation -->
+    <header>
+      <nav class="navbar-apex" id="main-navbar">
+        <div class="container d-flex align-items-center justify-content-between">
+          <!-- Brand Logo -->
+          <a href="#hero" class="brand-logo-text">
+            <span>APEX</span>
+            <span class="text-red">AUTO</span>
+            <span class="brand-logo-badge">CARE</span>
+          </a>
+
+          <!-- Desktop Navigation Links -->
+          <div class="d-none d-lg-flex align-items-center gap-2">
+            <a href="#hero" class="nav-link-apex active">Home</a>
+            <a href="#services" class="nav-link-apex">Services</a>
+            <a href="#why-us" class="nav-link-apex">Why Choose Us</a>
+            <a href="#gallery" class="nav-link-apex">Builds & Gallery</a>
+            <a href="#booking" class="nav-link-apex">Book Appointment</a>
+            <a href="#contact" class="nav-link-apex">Contact</a>
+          </div>
+
+          <!-- Actions -->
+          <div class="d-flex align-items-center gap-3">
+            <a href="tel:18005552739" class="d-none d-xl-flex align-items-center gap-2 text-decoration-none text-charcoal fw-bold small">
+              <span class="p-2 rounded-circle bg-light text-red border">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                </svg>
+              </span>
+              <span>(800) 555-2739</span>
+            </a>
+
+            <a href="#booking" class="btn-apex-red d-none d-sm-inline-flex">
+              <span>Book Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+
+            <!-- Mobile Hamburger Toggle -->
+            <button id="btn-hamburger" class="btn btn-light d-lg-none border p-2 text-charcoal" aria-label="Toggle Navigation Menu">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="3" y1="12" x2="21" y2="12"></line>
+                <line x1="3" y1="6" x2="21" y2="6"></line>
+                <line x1="3" y1="18" x2="21" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Mobile Slide Drawer -->
+    <div id="mobile-drawer" class="mobile-nav-drawer" aria-hidden="true">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <span class="fs-4 fw-bold font-heading text-white">APEX <span class="text-red">AUTO</span> CARE</span>
+        <button id="btn-close-drawer" class="btn btn-outline-light p-2" aria-label="Close menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+      <div class="d-flex flex-column gap-3 fs-5 font-heading">
+        <a href="#hero" class="mobile-nav-link text-white text-decoration-none">Home</a>
+        <a href="#services" class="mobile-nav-link text-white text-decoration-none">Services</a>
+        <a href="#why-us" class="mobile-nav-link text-white text-decoration-none">Why Choose Us</a>
+        <a href="#gallery" class="mobile-nav-link text-white text-decoration-none">Builds & Gallery</a>
+        <a href="#booking" class="mobile-nav-link text-white text-decoration-none">Book Appointment</a>
+        <a href="#contact" class="mobile-nav-link text-white text-decoration-none">Contact Us</a>
+      </div>
+      <div class="mt-4 pt-3 border-top border-secondary">
+        <a href="#booking" class="btn-apex-red w-100 text-center">Book Now</a>
+      </div>
+    </div>
+
+    <main>
+      <!-- Hero Section (Split Layout) -->
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <!-- Left Side Copy & Call to Actions -->
+            <div class="col-lg-6">
+              <div class="hero-trust-badge">
+                <span class="hero-trust-dot"></span>
+                <span>10+ Years of Trusted Automotive Excellence</span>
+              </div>
+
+              <h1 class="hero-title hero-title-reveal">
+                Precision Auto Care & <br class="d-none d-sm-block">
+                Performance Tuning <br class="d-none d-sm-block">
+                <span class="text-red">Done Right.</span>
+              </h1>
+
+              <p class="hero-description hero-desc-reveal">
+                From manufacturer-scheduled periodic servicing and computerized engine diagnostics to custom widebody modifications and suspension tuning. Certified technicians committed to keeping your car reliable, powerful, and safe.
+              </p>
+
+              <div class="d-flex flex-wrap align-items-center gap-3 hero-cta-group">
+                <a href="#booking" class="btn-apex-red">
+                  <span>Book Diagnostic Slot</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="tel:18005552739" class="btn-apex-sky-outline">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                  </svg>
+                  <span>Call (800) 555-APEX</span>
+                </a>
+              </div>
+
+              <!-- Animated Stats Strip -->
+              <div class="hero-stats-strip">
+                <div class="stat-item">
+                  <div class="stat-number font-mono-numbers stat-counter" data-target="10" data-suffix="+">10+</div>
+                  <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number font-mono-numbers stat-counter" data-target="3500" data-suffix="+">3,500+</div>
+                  <div class="stat-label">Vehicles Serviced</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number font-mono-numbers" style="color: var(--accent-red);">24/7</div>
+                  <div class="stat-label">Roadside Towing</div>
+                </div>
+                <div class="stat-item">
+                  <div class="stat-number font-mono-numbers stat-counter" data-target="99.4" data-suffix="%">99.4%</div>
+                  <div class="stat-label">Satisfaction Rate</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Side Image with Soft Gradient Shape & Floating Badges -->
+            <div class="col-lg-6">
+              <div id="hero-image-wrap" class="hero-image-wrap">
+                <!-- Decorative Red-to-Blue Soft Gradient Shape -->
+                <div class="hero-gradient-shape"></div>
+
+                <!-- Main Workshop Real Photo -->
+                <div id="hero-main-card" class="hero-main-card">
+                  <img class="hero-main-img" src="https://images.unsplash.com/photo-1613214149922-f1809c99b414?q=80&w=1200&auto=format&fit=crop" alt="Mechanic inspecting vehicle on lift in clean modern workshop" loading="eager">
+                </div>
+
+                <!-- Floating Trust Card 1 -->
+                <div id="hero-float-1" class="hero-float-card-1">
+                  <div class="p-2 rounded-circle bg-danger bg-opacity-10 text-red">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                      <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-charcoal small">4.9 / 5 Rating</div>
+                    <div class="text-muted" style="font-size: 0.75rem;">1,200+ Verified Customer Reviews</div>
+                  </div>
+                </div>
+
+                <!-- Floating Trust Card 2 -->
+                <div id="hero-float-2" class="hero-float-card-2">
+                  <div class="p-2 rounded-circle bg-primary bg-opacity-10 text-sky">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                      <polyline points="9 12 11 14 15 10"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-charcoal small">OEM Parts Guaranteed</div>
+                    <div class="text-muted" style="font-size: 0.75rem;">12-Month / 20k-Km Warranty</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Scrolling Marquee of Service Keywords -->
+      <div class="marquee-container" aria-label="Service capabilities list">
+        <div class="marquee-content">
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Engine Tuning & ECU Calibration
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Periodic Oil & Filter Service
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Computerized OBD-II Diagnostics
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> AC Climate Control & Gas Refill
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Custom Body Kits & Carbon Aero
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Brake Pad & Rotor Resurfacing
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> 9H Nano Ceramic Coating
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Wheel Laser Alignment & Balancing
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Transmission & Clutch Servicing
+          </span>
+          <!-- Duplicate for seamless continuous scroll -->
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Engine Tuning & ECU Calibration
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Periodic Oil & Filter Service
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Computerized OBD-II Diagnostics
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> AC Climate Control & Gas Refill
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Custom Body Kits & Carbon Aero
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> Brake Pad & Rotor Resurfacing
+          </span>
+          <span class="marquee-item">
+            <span class="marquee-star">★</span> 9H Nano Ceramic Coating
+          </span>
+        </div>
+      </div>
+
+      <!-- Services Section (Alternating Cards) -->
+      <section id="services" class="py-5 section-white">
+        <div class="container py-4">
+          <div class="text-center max-w-2xl mx-auto mb-5 reveal-on-scroll">
+            <span class="section-badge-pill">Professional Auto Solutions</span>
+            <h2 class="display-6 fw-bold font-heading text-charcoal mb-2">Our Specialized Garage Services</h2>
+            <p class="text-muted">From routine warranty maintenance to high-horsepower modifications, our certified technicians ensure flawless craftsmanship.</p>
+          </div>
+
+          <!-- Services Grid -->
+          <div class="row g-4" id="services-container">
+            <!-- Card 1: Periodic Maintenance -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=800&auto=format&fit=crop" alt="Engine oil change and maintenance">
+                  <span class="service-category-tag">Routine Care</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Periodic Maintenance & Oil Service</h3>
+                  <p class="service-card-desc">Factory-recommended interval inspection with OEM synthetic lubricants, filter replacements, and 40-point safety check.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Full Synthetic 5W-30 / 0W-20
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      OEM Oil, Air & Cabin Filters
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Computerized Scan & Reset
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$89.00</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="periodic-service">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 2: Engine Diagnostics -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean card-sky-tint">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?q=80&w=800&auto=format&fit=crop" alt="Computerized engine diagnostics">
+                  <span class="service-category-tag">Mechanical</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                      <line x1="8" y1="21" x2="16" y2="21"></line>
+                      <line x1="12" y1="17" x2="12" y2="21"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Computerized Diagnostics & Overhaul</h3>
+                  <p class="service-card-desc">Advanced ECU scanning, live sensor telemetry, fuel injector calibration, and cylinder compression leakdown testing.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      OBD-II Real-Time Fault Eradication
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Timing Chain & Gasket Service
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Dyno Wheel Horsepower Verification
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$120.00</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="engine-diagnostics">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 3: Car AC & Climate Control -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=800&auto=format&fit=crop" alt="Car AC refrigerant repair">
+                  <span class="service-category-tag">Climate Care</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Precision Car AC & Climate Control</h3>
+                  <p class="service-card-desc">Sub-zero cooling restored with R134a/R1234yf vacuum recharge, high-pressure UV dye leak check, and compressor servicing.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Sub-Zero Vent Temp Guarantee
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Antimicrobial Duct Disinfection
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Compressor Clutch & Coil Fix
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$75.00</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="ac-climate">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 4: Brakes & Suspension -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean card-sky-tint">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=800&auto=format&fit=crop" alt="Brembo brake calipers and suspension">
+                  <span class="service-category-tag">Safety & Chassis</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <circle cx="12" cy="12" r="4"></circle>
+                      <line x1="4.93" y1="4.93" x2="9.17" y2="9.17"></line>
+                      <line x1="14.83" y1="14.83" x2="19.07" y2="19.07"></line>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Brake Overhaul & Suspension</h3>
+                  <p class="service-card-desc">Ceramic pad installation, computerized brake disc resurfacing, adjustable coilovers, and laser alignment for crisp handling.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Low-Dust Ceramic Brake Pads
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Rotary Disc Lathe Precision
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      High-Temp DOT 4 Flush
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$150.00</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="brakes-suspension">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 5: Custom Body Kits & Modification -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=800&auto=format&fit=crop" alt="Modified sports car widebody kit">
+                  <span class="service-category-tag">Custom Tuning</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                      <polyline points="2 17 12 22 22 17"></polyline>
+                      <polyline points="2 12 12 17 22 12"></polyline>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Custom Body Kits & Aerodynamics</h3>
+                  <p class="service-card-desc">Bespoke carbon fiber splitters, wide fender flare conversions, GT wings, and laser-scanned millimeter-precise fitment.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Autoclaved Carbon Fiber Aero
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Widebody Stance Engineering
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Flawless Paint Code Matching
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$1,200</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="widebody-modification">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Card 6: Paint Correction & Detailing -->
+            <div class="col-md-6 col-lg-4 service-card-col">
+              <div class="service-card-clean card-sky-tint">
+                <div class="service-img-wrapper">
+                  <img src="https://images.unsplash.com/photo-1601362840469-51e4d8d58785?q=80&w=800&auto=format&fit=crop" alt="Car detailing and ceramic shield polish">
+                  <span class="service-category-tag">Detailing Studio</span>
+                  <div class="service-icon-floating">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    </svg>
+                  </div>
+                </div>
+                <div class="service-card-content">
+                  <h3 class="service-card-title">Paint Correction & 9H Ceramic Shield</h3>
+                  <p class="service-card-desc">Multi-stage rotary compounding eradicating 95%+ of swirls, deep interior steam extraction, and 5-year ceramic nanocoating.</p>
+                  <ul class="service-features-list">
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      3-Stage Machine Polish
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      9H Nano-Ceramic Hydrophobic Layer
+                    </li>
+                    <li>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#e10600" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                      Interior Deep Leather & Steam Care
+                    </li>
+                  </ul>
+                  <div class="service-price-row">
+                    <div>
+                      <span class="text-muted small d-block">Starting from</span>
+                      <span class="service-price-tag">$250.00</span>
+                    </div>
+                    <button class="btn btn-outline-danger fw-bold btn-sm rounded-pill px-3 btn-view-service-detail" data-service-key="paint-detailing">
+                      View Details
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Why Choose Us Section (Sky Blue Background) -->
+      <section id="why-us" class="py-5 section-sky">
+        <div class="container py-4">
+          <div class="text-center max-w-2xl mx-auto mb-5 reveal-on-scroll">
+            <span class="section-badge-pill" style="background: rgba(14, 165, 233, 0.12); color: #0284c7; border-color: rgba(14, 165, 233, 0.3);">
+              The Apex Standard
+            </span>
+            <h2 class="display-6 fw-bold font-heading text-charcoal mb-2">Why Discerning Drivers Choose Us</h2>
+            <p class="text-muted">We combine dealership-level diagnostic technology with independent workshop passion, transparency, and personal care.</p>
+          </div>
+
+          <div class="row g-4" id="why-us-grid">
+            <!-- Feature 1 -->
+            <div class="col-md-6 col-lg-3 why-col">
+              <div class="why-card">
+                <div class="why-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="7"></circle>
+                    <polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"></polyline>
+                  </svg>
+                </div>
+                <h3 class="fs-5 fw-bold font-heading text-charcoal mb-2">Certified Master Mechanics</h3>
+                <p class="text-muted small mb-0">ASE & factory-trained automotive technicians with a minimum of 8 years of specialized hands-on engineering experience.</p>
+              </div>
+            </div>
+
+            <!-- Feature 2 -->
+            <div class="col-md-6 col-lg-3 why-col">
+              <div class="why-card">
+                <div class="why-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                    <polyline points="9 12 11 14 15 10"></polyline>
+                  </svg>
+                </div>
+                <h3 class="fs-5 fw-bold font-heading text-charcoal mb-2">100% Genuine OEM Parts</h3>
+                <p class="text-muted small mb-0">Zero compromise on authenticity. We source directly from official manufacturer distributors with full part warranty intact.</p>
+              </div>
+            </div>
+
+            <!-- Feature 3 -->
+            <div class="col-md-6 col-lg-3 why-col">
+              <div class="why-card">
+                <div class="why-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <polyline points="12 6 12 12 16 14"></polyline>
+                  </svg>
+                </div>
+                <h3 class="fs-5 fw-bold font-heading text-charcoal mb-2">Fast, Guaranteed Turnaround</h3>
+                <p class="text-muted small mb-0">Same-day turnaround on routine maintenance, with dedicated bay scheduling so your vehicle is never left sitting idle.</p>
+              </div>
+            </div>
+
+            <!-- Feature 4 -->
+            <div class="col-md-6 col-lg-3 why-col">
+              <div class="why-card">
+                <div class="why-icon-box">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="12" y1="1" x2="12" y2="23"></line>
+                    <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path>
+                  </svg>
+                </div>
+                <h3 class="fs-5 fw-bold font-heading text-charcoal mb-2">Transparent Upfront Pricing</h3>
+                <p class="text-muted small mb-0">Itemized digital quotes provided before a single wrench turns. No surprises, no hidden diagnostic fees, ever.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery / Workshop Builds Section with Lightbox -->
+      <section id="gallery" class="py-5 section-white">
+        <div class="container py-4">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end mb-4 reveal-on-scroll">
+            <div>
+              <span class="section-badge-pill">Visual Portfolio</span>
+              <h2 class="display-6 fw-bold font-heading text-charcoal mb-1">Recent Workshop & Modification Builds</h2>
+              <p class="text-muted small mb-0">Click any image to inspect high-resolution mechanical craftsmanship and finish quality in the lightbox.</p>
+            </div>
+            <div class="mt-3 mt-md-0">
+              <a href="#booking" class="btn btn-outline-danger fw-bold rounded-pill px-4">Request a Build Quote</a>
+            </div>
+          </div>
+
+          <!-- Gallery Grid -->
+          <div class="row g-4" id="gallery-container">
+            <!-- Image 1 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Widebody Aerodynamics & Custom Forged Rims">
+                <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?q=80&w=900&auto=format&fit=crop" alt="Mercedes AMG GT Widebody build" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Bespoke Widebody Aero Conversion</div>
+                  <div class="small opacity-75 font-mono-numbers">AMG GT · Dry Carbon Splitter</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Twin-Turbo Blueprint V8 Engine Overhaul (780 WHP)">
+                <img src="/src/assets/images/car_engine_tuned_1790329645111.jpg" alt="Twin turbo engine bay rebuild" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Twin-Turbo Stage 3 Powertrain</div>
+                  <div class="small opacity-75 font-mono-numbers">780 WHP · Forged Pistons & Billet Turbos</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 3 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Precision Laser Wheel Alignment & Suspension Tuning">
+                <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&w=900&auto=format&fit=crop" alt="Brembo performance brake calipers and coilover" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Brembo Big Brake & Coilover Setup</div>
+                  <div class="small opacity-75 font-mono-numbers">6-Piston Monobloc · Corner Balanced</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 4 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Porsche 911 GT3 Track Setup & Downforce Tuning">
+                <img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=900&auto=format&fit=crop" alt="Porsche 911 GT3 track car" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Porsche 911 Track Campaign Calibration</div>
+                  <div class="small opacity-75 font-mono-numbers">Camber Optimization · Race Telemetry</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 5 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Custom Valvetronic Titanium Exhaust System Installation">
+                <img src="https://images.unsplash.com/photo-1580273916550-e323be2ae537?q=80&w=900&auto=format&fit=crop" alt="Supercar custom exhaust system" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Valvetronic Titanium Exhaust</div>
+                  <div class="small opacity-75 font-mono-numbers">TIG Welded · Electronic Sound Valves</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Image 6 -->
+            <div class="col-sm-6 col-lg-4 gallery-col">
+              <div class="gallery-grid-item" data-title="Multi-Stage Paint Correction & 9H Ceramic Shield">
+                <img src="/src/assets/images/car_detailing_paint_1790329660510.jpg" alt="Automotive paint reflection detailing" loading="lazy">
+                <div class="gallery-hover-overlay">
+                  <span class="gallery-view-btn">Inspect Build</span>
+                  <div class="fw-bold mt-2">Mirror Finish 9H Ceramic Shield</div>
+                  <div class="small opacity-75 font-mono-numbers">Rotary Polish · Infrared Cured Shield</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Booking / Intake Form Section (Light Sky Blue Background) -->
+      <section id="booking" class="py-5 section-sky">
+        <div class="container py-4">
+          <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+              <div class="booking-form-card reveal-on-scroll">
+                <div class="text-center mb-4">
+                  <span class="section-badge-pill">Reserve Your Bay</span>
+                  <h2 class="display-6 fw-bold font-heading text-charcoal mb-2">Book Service or Diagnostic Slot</h2>
+                  <p class="text-muted small">Choose your service below for an instant upfront estimate and priority appointment slot.</p>
+                </div>
+
+                <!-- Instant Upfront Estimate Pill -->
+                <div id="booking-estimate-badge" class="alert alert-info py-2 px-3 align-items-center justify-content-between mb-4" style="display: none; background: #e0f2fe; border-color: #7dd3fc; border-radius: 10px;">
+                  <div class="d-flex align-items-center gap-2">
+                    <span class="badge bg-primary">Upfront Estimate</span>
+                    <span class="fw-bold text-dark" id="estimate-price-val">$89 – $180 (Same Day)</span>
+                  </div>
+                  <span class="small text-muted d-none d-sm-inline">Subject to vehicle inspection</span>
+                </div>
+
+                <!-- Booking Form -->
+                <form id="booking-form" novalidate>
+                  <div class="row g-3">
+                    <!-- Client Name -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-name" class="form-label-clean">Full Name *</label>
+                      <input type="text" id="booking-name" class="form-control-clean" placeholder="e.g. John Henderson" required>
+                      <div class="form-error-feedback">Please enter your full name.</div>
+                    </div>
+
+                    <!-- Client Phone -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-phone" class="form-label-clean">Phone Number *</label>
+                      <input type="tel" id="booking-phone" class="form-control-clean" placeholder="e.g. +1 (555) 234-8900" required>
+                      <div class="form-error-feedback">Please provide a valid contact phone number.</div>
+                    </div>
+
+                    <!-- Client Email -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-email" class="form-label-clean">Email Address *</label>
+                      <input type="email" id="booking-email" class="form-control-clean" placeholder="e.g. john@example.com" required>
+                      <div class="form-error-feedback">Please provide a valid email address.</div>
+                    </div>
+
+                    <!-- Vehicle Make & Model -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-vehicle" class="form-label-clean">Vehicle Make, Model & Year *</label>
+                      <input type="text" id="booking-vehicle" class="form-control-clean" placeholder="e.g. 2022 Toyota Supra / Honda Civic" required>
+                      <div class="form-error-feedback">Please enter your vehicle details.</div>
+                    </div>
+
+                    <!-- Service Dropdown -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-service" class="form-label-clean">Service Category *</label>
+                      <select id="booking-service" class="form-control-clean" required>
+                        <option value="" disabled selected>Select service category...</option>
+                        <option value="periodic-service">Periodic Maintenance & Oil Service ($89 – $180)</option>
+                        <option value="engine-diagnostics">Computerized Diagnostics & Overhaul ($120 – $850)</option>
+                        <option value="ac-climate">Car AC & Climate Control Repair ($75 – $320)</option>
+                        <option value="brakes-suspension">Brake Overhaul & Suspension ($150 – $580)</option>
+                        <option value="widebody-modification">Custom Body Kits & Aerodynamics ($1,200 – $4,500)</option>
+                        <option value="paint-detailing">Paint Correction & 9H Ceramic Shield ($250 – $850)</option>
+                      </select>
+                      <div class="form-error-feedback">Please select a service type.</div>
+                    </div>
+
+                    <!-- Preferred Date -->
+                    <div class="col-md-6 form-group-wrap">
+                      <label for="booking-date" class="form-label-clean">Preferred Appointment Date</label>
+                      <input type="date" id="booking-date" class="form-control-clean">
+                    </div>
+
+                    <!-- Additional Details -->
+                    <div class="col-12 form-group-wrap">
+                      <label for="booking-notes" class="form-label-clean">Symptoms or Specific Requests</label>
+                      <textarea id="booking-notes" rows="3" class="form-control-clean" placeholder="Describe any strange noises, warning lights on dashboard, performance goals, or custom parts to install..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="col-12 mt-3 text-center">
+                      <button type="submit" class="btn-apex-red py-3 px-5 fs-6 w-100 w-sm-auto">
+                        <span>Confirm Priority Booking</span>
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                          <line x1="5" y1="12" x2="19" y2="12"></line>
+                          <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                      </button>
+                      <div class="text-muted small mt-2">
+                        Includes complimentary 40-point computerized safety inspection with every service.
+                      </div>
+                    </div>
+                  </div>
+                </form>
+
+                <!-- Success Confirmation Card -->
+                <div id="booking-success-box" class="booking-success-alert">
+                  <div class="d-inline-flex p-3 rounded-circle bg-danger bg-opacity-10 text-red mb-3">
+                    <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"></polyline>
+                    </svg>
+                  </div>
+                  <h3 class="fs-3 fw-bold font-heading text-charcoal mb-2">Appointment Confirmed!</h3>
+                  <p class="text-muted mb-4">Your priority bay has been reserved. A confirmation SMS and email have been dispatched to your device.</p>
+
+                  <div class="bg-white p-3 rounded-3 border border-sky text-start max-w-md mx-auto mb-4 font-mono-numbers small">
+                    <div class="d-flex justify-content-between pb-2 border-bottom mb-2">
+                      <span class="text-muted">BOOKING REF:</span>
+                      <span id="success-booking-ref" class="fw-bold text-red">APX-78241</span>
+                    </div>
+                    <div class="d-flex justify-content-between pb-2 border-bottom mb-2">
+                      <span class="text-muted">CLIENT:</span>
+                      <span id="success-client-name" class="fw-bold text-charcoal">John Henderson</span>
+                    </div>
+                    <div class="d-flex justify-content-between pb-2 border-bottom mb-2">
+                      <span class="text-muted">VEHICLE:</span>
+                      <span id="success-client-vehicle" class="text-charcoal">Toyota Supra</span>
+                    </div>
+                    <div class="d-flex justify-content-between pb-2 border-bottom mb-2">
+                      <span class="text-muted">SERVICE:</span>
+                      <span id="success-client-service" class="text-sky fw-bold">Periodic Maintenance</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                      <span class="text-muted">SCHEDULED DATE:</span>
+                      <span id="success-client-date" class="text-charcoal">2026-10-02</span>
+                    </div>
+                  </div>
+
+                  <p class="text-muted small mb-3">Our service advisor will call 1 hour prior to drop-off. Need immediate assistance? Call <a href="tel:18005552739" class="text-red fw-bold">+1 (800) 555-APEX</a>.</p>
+
+                  <button id="btn-reset-form" class="btn btn-outline-secondary btn-sm px-4 rounded-pill">
+                    Book Another Appointment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Workshop Contact & Location Section -->
+      <section id="contact" class="py-5 section-white">
+        <div class="container py-4">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6 reveal-on-scroll">
+              <span class="section-badge-pill">Find Our Workshop</span>
+              <h2 class="display-6 fw-bold font-heading text-charcoal mb-3">Visit Apex Auto Care Garage</h2>
+              <p class="text-muted mb-4">
+                Conveniently located in the Velocity District. Our facility features 6 hydraulic hoists, a cleanroom engine assembly bay, automated paint spray booths, and a comfortable customer lounge with complimentary high-speed Wi-Fi and artisan coffee.
+              </p>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="p-2 rounded-circle bg-light border text-red">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                      <circle cx="12" cy="10" r="3"></circle>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-charcoal">Workshop Headquarters</div>
+                    <div class="text-muted small">840 Performance Way, Velocity District, CA 90210</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="p-2 rounded-circle bg-light border text-sky">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-charcoal">Direct Inquiries & Roadside Assistance</div>
+                    <div class="text-muted small">+1 (800) 555-APEX · info@apexautocare.com</div>
+                  </div>
+                </div>
+
+                <div class="d-flex align-items-start gap-3">
+                  <div class="p-2 rounded-circle bg-light border text-charcoal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <polyline points="12 6 12 12 16 14"></polyline>
+                    </svg>
+                  </div>
+                  <div>
+                    <div class="fw-bold text-charcoal">Operating Schedule</div>
+                    <div class="text-muted small">Monday – Saturday: 8:00 AM – 8:00 PM · Sunday: Emergency Towing Only</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6 reveal-on-scroll">
+              <div class="p-4 rounded-4 bg-light-blue border border-sky">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <h4 class="fs-5 fw-bold font-heading text-charcoal mb-0">Live Bay Status</h4>
+                  <span class="badge bg-success">Open & Operational</span>
+                </div>
+                <p class="text-muted small mb-4">
+                  We maintain a digital bay tracking queue so you can see live turnaround windows before you drive in.
+                </p>
+                <div class="bg-white p-3 rounded-3 border mb-3">
+                  <div class="d-flex justify-content-between align-items-center mb-2 font-mono-numbers small">
+                    <span class="text-charcoal fw-bold">Bay 1 – Quick Lube & Inspection:</span>
+                    <span class="text-success fw-bold">Available Now</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2 font-mono-numbers small">
+                    <span class="text-charcoal fw-bold">Bay 2 – Computerized Diagnostics:</span>
+                    <span class="text-sky fw-bold">Estimated wait: 20 min</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center mb-2 font-mono-numbers small">
+                    <span class="text-charcoal fw-bold">Bay 3 – Suspension & Brakes:</span>
+                    <span class="text-success fw-bold">Available Now</span>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center font-mono-numbers small">
+                    <span class="text-charcoal fw-bold">Bay 4 – Aero & Body Kits:</span>
+                    <span class="text-red fw-bold">By Prior Booking</span>
+                  </div>
+                </div>
+                <a href="#booking" class="btn-apex-red w-100 text-center">
+                  <span>Reserve an Active Bay</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer (Dark Charcoal Contrast) -->
+    <footer class="footer-clean">
+      <div class="container">
+        <div class="row g-5">
+          <!-- Col 1: Brand Info -->
+          <div class="col-lg-4">
+            <a href="#hero" class="footer-brand mb-3 d-inline-block">
+              <span>APEX</span>
+              <span class="text-red">AUTO</span>
+              <span>CARE</span>
+            </a>
+            <p class="small text-slate-400 mb-4" style="max-width: 320px;">
+              Your trusted partner for certified automotive repairs, periodic maintenance, engine tuning, and bespoke custom styling.
+            </p>
+            <div class="d-flex align-items-center gap-2">
+              <a href="#" class="footer-social-icon" aria-label="Facebook">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                </svg>
+              </a>
+              <a href="#" class="footer-social-icon" aria-label="Instagram">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                  <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                  <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                </svg>
+              </a>
+              <a href="#" class="footer-social-icon" aria-label="YouTube">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"></path>
+                  <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Col 2: Services -->
+          <div class="col-6 col-lg-2">
+            <h5 class="text-white font-heading fs-6 mb-3">Key Services</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#services" class="footer-link">Oil & Filter Change</a></li>
+              <li><a href="#services" class="footer-link">OBD-II Diagnostics</a></li>
+              <li><a href="#services" class="footer-link">AC Climate Repair</a></li>
+              <li><a href="#services" class="footer-link">Brake Disc Resurfacing</a></li>
+              <li><a href="#services" class="footer-link">Body Kit Installations</a></li>
+              <li><a href="#services" class="footer-link">9H Ceramic Shield</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Quick Navigation -->
+          <div class="col-6 col-lg-2">
+            <h5 class="text-white font-heading fs-6 mb-3">Quick Links</h5>
+            <ul class="list-unstyled mb-0">
+              <li><a href="#hero" class="footer-link">Home</a></li>
+              <li><a href="#services" class="footer-link">Services</a></li>
+              <li><a href="#why-us" class="footer-link">Why Choose Us</a></li>
+              <li><a href="#gallery" class="footer-link">Build Gallery</a></li>
+              <li><a href="#booking" class="footer-link">Book Appointment</a></li>
+              <li><a href="#contact" class="footer-link">Workshop Map</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: Emergency Assistance -->
+          <div class="col-lg-4">
+            <h5 class="text-white font-heading fs-6 mb-3">Emergency Towing</h5>
+            <p class="small text-slate-400 mb-3">
+              Stranded on the road with an engine fault or tire blowout? Our flatbed recovery fleet is on call 24 hours a day, 7 days a week.
+            </p>
+            <div class="p-3 rounded-3 border border-secondary" style="background-color: #1e293b;">
+              <div class="text-red fw-bold font-heading fs-5 mb-1">
+                <a href="tel:18005552739" class="text-red text-decoration-none">+1 (800) 555-APEX</a>
+              </div>
+              <div class="text-slate-400 small">Average recovery dispatch time: 25 minutes</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+          <div>
+            &copy; 2026 Apex Auto Care Ltd. All rights reserved. Registered Automotive Facility.
+          </div>
+          <div class="d-flex gap-4">
+            <a href="#" class="footer-link mb-0">Privacy Policy</a>
+            <a href="#" class="footer-link mb-0">Terms of Service</a>
+            <a href="#" class="footer-link mb-0">Warranty Information</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Service Detail Modal -->
+    <div id="service-modal" class="service-modal-backdrop" aria-hidden="true" role="dialog">
+      <div class="service-modal-card">
+        <div class="d-flex justify-content-between align-items-start mb-3">
+          <div>
+            <span id="modal-category" class="section-badge-pill mb-1">Routine Care</span>
+            <h3 id="modal-title" class="fs-4 fw-bold font-heading text-charcoal mb-0">Service Detail</h3>
+          </div>
+          <button id="btn-close-service-modal" class="btn-close" aria-label="Close modal"></button>
+        </div>
+
+        <div class="d-flex align-items-center gap-4 py-2 border-top border-bottom my-3">
+          <div>
+            <span class="text-muted small d-block">Estimated Cost</span>
+            <span id="modal-price" class="text-red fw-bold fs-5 font-heading">$89 – $180</span>
+          </div>
+          <div class="vr"></div>
+          <div>
+            <span class="text-muted small d-block">Average Duration</span>
+            <span id="modal-duration" class="text-charcoal fw-bold font-heading">1–2 Hours</span>
+          </div>
+        </div>
+
+        <p id="modal-desc" class="text-muted small mb-3">
+          Comprehensive 40-point vehicle inspection with synthetic oil replacement and filter checks.
+        </p>
+
+        <h5 class="fs-6 fw-bold font-heading text-charcoal mb-2">Service Deliverables Included:</h5>
+        <ul id="modal-highlights" class="list-unstyled mb-4"></ul>
+
+        <div class="d-flex justify-content-end gap-2">
+          <button id="btn-select-service" class="btn-apex-red w-100">
+            <span>Book This Service</span>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery Full-Screen Lightbox Modal -->
+    <div id="gallery-lightbox" class="lightbox-modal" aria-hidden="true" role="dialog">
+      <div class="lightbox-inner">
+        <button id="btn-close-lightbox" class="lightbox-close-btn" aria-label="Close Lightbox">&times;</button>
+        <img id="lightbox-image" src="" alt="High resolution build image">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+      </div>
+    </div>
+
+    <!-- Application Script -->
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
